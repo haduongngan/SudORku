@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="sudoku" targetName="sudoku" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1d8ee42a-5f69-4276-bfec-662239c7ae59" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sudoku.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nhap.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paper/HaKTslide.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test3.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1eqLhY3k7eVCnLRZCcqpjK8MZoV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="sudoku" TARGET_NAME="sudoku" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="sudoku" RUN_TARGET_NAME="sudoku">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CMake.Install" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sudoku" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="../input.txt ../output.txt" PASS_PARENT_ENVS_2="true" PROJECT_NAME="sudoku" TARGET_NAME="sudoku" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="sudoku" RUN_TARGET_NAME="sudoku">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1d8ee42a-5f69-4276-bfec-662239c7ae59" name="Default Changelist" comment="" />
+      <created>1595044295442</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595044295442</updated>
+      <workItem from="1595044297501" duration="16678000" />
+      <workItem from="1595170584223" duration="8733000" />
+      <workItem from="1595402891255" duration="376000" />
+      <workItem from="1595403286144" duration="5927000" />
+      <workItem from="1595413767702" duration="355000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="183" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595409289848">
+      <screen x="0" y="23" width="1440" height="807" />
+    </state>
+    <state x="183" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.807@0.23.1440.807" timestamp="1595409289848" />
+    <state x="183" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.812@0.23.1440.812" timestamp="1595259572755" />
+    <state x="183" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.813@0.23.1440.813" timestamp="1595261005760" />
+    <state x="452" y="236" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595260072569">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state x="452" y="236" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.812@0.23.1440.812" timestamp="1595259603959" />
+    <state x="452" y="236" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.813@0.23.1440.813" timestamp="1595260072569" />
+    <state width="1184" height="171" key="GridCell.Tab.0.bottom" timestamp="1595409298147">
+      <screen x="0" y="23" width="1440" height="807" />
+    </state>
+    <state width="1184" height="171" key="GridCell.Tab.0.bottom/0.23.1440.807@0.23.1440.807" timestamp="1595409298147" />
+    <state width="1184" height="251" key="GridCell.Tab.0.bottom/0.23.1440.810@0.23.1440.810" timestamp="1595069647385" />
+    <state width="1184" height="2" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1595261113026" />
+    <state width="1184" height="171" key="GridCell.Tab.0.center" timestamp="1595409298146">
+      <screen x="0" y="23" width="1440" height="807" />
+    </state>
+    <state width="1184" height="171" key="GridCell.Tab.0.center/0.23.1440.807@0.23.1440.807" timestamp="1595409298146" />
+    <state width="1184" height="251" key="GridCell.Tab.0.center/0.23.1440.810@0.23.1440.810" timestamp="1595069647383" />
+    <state width="1184" height="2" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1595261113023" />
+    <state width="1184" height="171" key="GridCell.Tab.0.left" timestamp="1595409298145">
+      <screen x="0" y="23" width="1440" height="807" />
+    </state>
+    <state width="1184" height="171" key="GridCell.Tab.0.left/0.23.1440.807@0.23.1440.807" timestamp="1595409298145" />
+    <state width="1184" height="251" key="GridCell.Tab.0.left/0.23.1440.810@0.23.1440.810" timestamp="1595069647383" />
+    <state width="1184" height="2" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1595261113022" />
+    <state width="1184" height="171" key="GridCell.Tab.0.right" timestamp="1595409298146">
+      <screen x="0" y="23" width="1440" height="807" />
+    </state>
+    <state width="1184" height="171" key="GridCell.Tab.0.right/0.23.1440.807@0.23.1440.807" timestamp="1595409298146" />
+    <state width="1184" height="251" key="GridCell.Tab.0.right/0.23.1440.810@0.23.1440.810" timestamp="1595069647384" />
+    <state width="1184" height="2" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1595261113024" />
+    <state x="489" y="155" key="RollbackChangesDialog" timestamp="1595414121747">
+      <screen x="0" y="23" width="1440" height="807" />
+    </state>
+    <state x="489" y="155" key="RollbackChangesDialog/0.23.1440.807@0.23.1440.807" timestamp="1595414121747" />
+    <state x="461" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1595170835343">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state x="461" y="260" key="com.intellij.ide.util.TipDialog/0.23.1440.810@0.23.1440.810" timestamp="1595170835343" />
+  </component>
+</project>
