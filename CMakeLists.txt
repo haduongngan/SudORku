@@ -3,7 +3,10 @@ project(sudoku)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(sudoku main.cpp)
+add_executable(sudoku
+        main.cpp
+#        1sol.cpp
+        )
 
 
 include_directories(/Applications/CPLEX_Studio1210/cplex/include)

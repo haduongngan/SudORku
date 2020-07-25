@@ -522,7 +522,12 @@ int main(int argc, char** argv) {
     cplex.setParam(IloCplex::Param::MIP::Limits::Populate, 5);
 
 
+    IloNum start;
+    start = cplex.getTime();
+
         cplex.populate();
+    output <<  ((cplex.getTime() - start < 0.001) ? 0.001 : (cplex.getTime() - start)) << endl;
+
         int numSol = cplex.getSolnPoolNsolns();
         output << numSol << endl << endl;
 

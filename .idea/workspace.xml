@@ -11,24 +11,21 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d8ee42a-5f69-4276-bfec-662239c7ae59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sudoku.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nhap.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paper/HaKTslide.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test3.txt" afterDir="false" />
+    <list default="true" id="1d8ee42a-5f69-4276-bfec-662239c7ae59" name="Default Changelist" comment="commit">
+      <change afterPath="$PROJECT_DIR$/1sol.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sudoku.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sudoku.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sudoku.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sudoku.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sudoku" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/sudoku" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test3.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +38,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1eqLhY3k7eVCnLRZCcqpjK8MZoV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -82,11 +80,18 @@
       <workItem from="1595402891255" duration="376000" />
       <workItem from="1595403286144" duration="5927000" />
       <workItem from="1595413767702" duration="355000" />
+      <workItem from="1595414220571" duration="690000" />
+      <workItem from="1595504057116" duration="1155000" />
+      <workItem from="1595648046422" duration="3184000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="183" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595409289848">
@@ -100,37 +105,49 @@
     </state>
     <state x="452" y="236" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.812@0.23.1440.812" timestamp="1595259603959" />
     <state x="452" y="236" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.813@0.23.1440.813" timestamp="1595260072569" />
-    <state width="1184" height="171" key="GridCell.Tab.0.bottom" timestamp="1595409298147">
-      <screen x="0" y="23" width="1440" height="807" />
+    <state x="313" y="29" key="CommitChangelistDialog2" timestamp="1595651380366">
+      <screen x="0" y="23" width="1440" height="812" />
     </state>
-    <state width="1184" height="171" key="GridCell.Tab.0.bottom/0.23.1440.807@0.23.1440.807" timestamp="1595409298147" />
-    <state width="1184" height="251" key="GridCell.Tab.0.bottom/0.23.1440.810@0.23.1440.810" timestamp="1595069647385" />
+    <state x="313" y="29" key="CommitChangelistDialog2/0.23.1440.812@0.23.1440.812" timestamp="1595651380366" />
+    <state width="1184" height="216" key="GridCell.Tab.0.bottom" timestamp="1595651380765">
+      <screen x="0" y="23" width="1440" height="812" />
+    </state>
+    <state width="1184" height="350" key="GridCell.Tab.0.bottom/0.23.1440.807@0.23.1440.807" timestamp="1595649389432" />
+    <state width="1184" height="216" key="GridCell.Tab.0.bottom/0.23.1440.810@0.23.1440.810" timestamp="1595650695522" />
+    <state width="1184" height="216" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1595651380765" />
     <state width="1184" height="2" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1595261113026" />
-    <state width="1184" height="171" key="GridCell.Tab.0.center" timestamp="1595409298146">
-      <screen x="0" y="23" width="1440" height="807" />
+    <state width="1184" height="216" key="GridCell.Tab.0.center" timestamp="1595651380764">
+      <screen x="0" y="23" width="1440" height="812" />
     </state>
-    <state width="1184" height="171" key="GridCell.Tab.0.center/0.23.1440.807@0.23.1440.807" timestamp="1595409298146" />
-    <state width="1184" height="251" key="GridCell.Tab.0.center/0.23.1440.810@0.23.1440.810" timestamp="1595069647383" />
+    <state width="1184" height="350" key="GridCell.Tab.0.center/0.23.1440.807@0.23.1440.807" timestamp="1595649389431" />
+    <state width="1184" height="216" key="GridCell.Tab.0.center/0.23.1440.810@0.23.1440.810" timestamp="1595650695520" />
+    <state width="1184" height="216" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1595651380764" />
     <state width="1184" height="2" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1595261113023" />
-    <state width="1184" height="171" key="GridCell.Tab.0.left" timestamp="1595409298145">
-      <screen x="0" y="23" width="1440" height="807" />
+    <state width="1184" height="216" key="GridCell.Tab.0.left" timestamp="1595651380763">
+      <screen x="0" y="23" width="1440" height="812" />
     </state>
-    <state width="1184" height="171" key="GridCell.Tab.0.left/0.23.1440.807@0.23.1440.807" timestamp="1595409298145" />
-    <state width="1184" height="251" key="GridCell.Tab.0.left/0.23.1440.810@0.23.1440.810" timestamp="1595069647383" />
+    <state width="1184" height="350" key="GridCell.Tab.0.left/0.23.1440.807@0.23.1440.807" timestamp="1595649389430" />
+    <state width="1184" height="216" key="GridCell.Tab.0.left/0.23.1440.810@0.23.1440.810" timestamp="1595650695519" />
+    <state width="1184" height="216" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1595651380763" />
     <state width="1184" height="2" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1595261113022" />
-    <state width="1184" height="171" key="GridCell.Tab.0.right" timestamp="1595409298146">
-      <screen x="0" y="23" width="1440" height="807" />
+    <state width="1184" height="216" key="GridCell.Tab.0.right" timestamp="1595651380764">
+      <screen x="0" y="23" width="1440" height="812" />
     </state>
-    <state width="1184" height="171" key="GridCell.Tab.0.right/0.23.1440.807@0.23.1440.807" timestamp="1595409298146" />
-    <state width="1184" height="251" key="GridCell.Tab.0.right/0.23.1440.810@0.23.1440.810" timestamp="1595069647384" />
+    <state width="1184" height="350" key="GridCell.Tab.0.right/0.23.1440.807@0.23.1440.807" timestamp="1595649389431" />
+    <state width="1184" height="216" key="GridCell.Tab.0.right/0.23.1440.810@0.23.1440.810" timestamp="1595650695521" />
+    <state width="1184" height="216" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1595651380764" />
     <state width="1184" height="2" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1595261113024" />
     <state x="489" y="155" key="RollbackChangesDialog" timestamp="1595414121747">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
     <state x="489" y="155" key="RollbackChangesDialog/0.23.1440.807@0.23.1440.807" timestamp="1595414121747" />
-    <state x="461" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1595170835343">
+    <state x="461" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1595504064355">
       <screen x="0" y="23" width="1440" height="810" />
     </state>
-    <state x="461" y="260" key="com.intellij.ide.util.TipDialog/0.23.1440.810@0.23.1440.810" timestamp="1595170835343" />
+    <state x="461" y="260" key="com.intellij.ide.util.TipDialog/0.23.1440.810@0.23.1440.810" timestamp="1595504064355" />
+    <state x="508" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595663195993">
+      <screen x="0" y="23" width="1440" height="812" />
+    </state>
+    <state x="508" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.812@0.23.1440.812" timestamp="1595663195993" />
   </component>
 </project>
