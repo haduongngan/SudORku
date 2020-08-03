@@ -1,4 +1,4 @@
-/private/var/folders/gm/0xq32gcn30z85yv4198gxkt00000gq/T/AppTranslocation/58935565-D2F4-404B-BF1D-A3B55421C1DE/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/hatnho0708/Documents/ORLAB/sudoku
+/private/var/folders/gm/0xq32gcn30z85yv4198gxkt00000gq/T/AppTranslocation/AF5368E6-57BC-46F3-AA22-535E8E9A68AF/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/hatnho0708/Documents/ORLAB/sudoku
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/hatnho0708/Documents/ORLAB/sudoku/cmake-build-debug

@@ -327,8 +327,7 @@ int main(int argc, char** argv) {
             break;
         }
 
-        case Jigsaw :
-        {
+        case Jigsaw : {
 
             int inputNum[sizeOfMatrix][sizeOfMatrix];
             for (int i = 1; i < sizeOfMatrix; i++) {
@@ -383,24 +382,36 @@ int main(int argc, char** argv) {
             }
 
             //color block
-            for (int m = 1; m < sizeOfMatrix; m++){
-                vector<pos> block;
-                for (int i = 1; i < sizeOfMatrix; i++) {
-                    int r,c;
-                    input >> r >> c;
-                    pos tmp(r, c);
-                    block.push_back(tmp);
-                }
 
+            int color[sizeOfMatrix][sizeOfMatrix];
+            for (int i = 1; i < sizeOfMatrix; i++) {
+                for (int j = 1; j < sizeOfMatrix; j++) {
+                    input >> color[i][j];
+                }
+            }
+
+            vector<vector<pos>> block;
+            for (int m = 0; m < sizeOfMatrix - 1; m++) {
+                vector<pos> tmp;
+                block.push_back(tmp);
+            }
+
+            for (int i = 1; i < sizeOfMatrix; i++) {
+                for (int j = 1; j < sizeOfMatrix; j++) {
+                    pos tmp(i, j);
+                    block[color[i][j]].push_back(tmp);
+                }
+            }
+
+            for (int m = 0; m < sizeOfMatrix - 1; m++) {
                 for (int k = 1; k < sizeOfMatrix; k++) {
                     IloExpr tmp(env);
-                    for (int y = 0; y < block.size(); y++){
-                        tmp += x[block[y].row][block[y].col][k];
+                    for (int y = 0; y < block[m].size(); y++) {
+                        tmp += x[block[m][y].row][block[m][y].col][k];
                     }
                     model.add(tmp == 1);
                 }
             }
-
             break;
         }
 
@@ -521,11 +532,12 @@ int main(int argc, char** argv) {
     cplex.setParam(IloCplex::Param::MIP::Pool::Intensity, 4);
     cplex.setParam(IloCplex::Param::MIP::Limits::Populate, 5);
 
+    //cplex.exportModel("/Users/hatnho0708/Library/Preferences/CLion2019.3/scratches/model.lp");
 
     IloNum start;
     start = cplex.getTime();
 
-        cplex.populate();
+    cplex.populate();
     output <<  ((cplex.getTime() - start < 0.001) ? 0.001 : (cplex.getTime() - start)) << endl;
 
         int numSol = cplex.getSolnPoolNsolns();
