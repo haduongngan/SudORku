@@ -86,7 +86,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/hatnho0708/Documents/ORLAB/sudoku/main.cpp">
+		<Unit filename="/Users/hatnho0708/Documents/ORLAB/sudoku/1sol.cpp">
 			<Option target="sudoku"/>
 		</Unit>
 		<Unit filename="/Users/hatnho0708/Documents/ORLAB/sudoku/CMakeLists.txt">

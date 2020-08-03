@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/hatnho0708/Documents/ORLAB/sudoku/main.cpp" "/Users/hatnho0708/Documents/ORLAB/sudoku/cmake-build-debug/CMakeFiles/sudoku.dir/main.cpp.o"
+  "/Users/hatnho0708/Documents/ORLAB/sudoku/1sol.cpp" "/Users/hatnho0708/Documents/ORLAB/sudoku/cmake-build-debug/CMakeFiles/sudoku.dir/1sol.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

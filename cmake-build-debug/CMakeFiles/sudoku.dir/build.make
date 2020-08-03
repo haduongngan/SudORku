@@ -57,27 +57,27 @@ include CMakeFiles/sudoku.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/sudoku.dir/flags.make
 
-CMakeFiles/sudoku.dir/main.cpp.o: CMakeFiles/sudoku.dir/flags.make
-CMakeFiles/sudoku.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hatnho0708/Documents/ORLAB/sudoku/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sudoku.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sudoku.dir/main.cpp.o -c /Users/hatnho0708/Documents/ORLAB/sudoku/main.cpp
+CMakeFiles/sudoku.dir/1sol.cpp.o: CMakeFiles/sudoku.dir/flags.make
+CMakeFiles/sudoku.dir/1sol.cpp.o: ../1sol.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hatnho0708/Documents/ORLAB/sudoku/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sudoku.dir/1sol.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sudoku.dir/1sol.cpp.o -c /Users/hatnho0708/Documents/ORLAB/sudoku/1sol.cpp
 
-CMakeFiles/sudoku.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sudoku.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hatnho0708/Documents/ORLAB/sudoku/main.cpp > CMakeFiles/sudoku.dir/main.cpp.i
+CMakeFiles/sudoku.dir/1sol.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sudoku.dir/1sol.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hatnho0708/Documents/ORLAB/sudoku/1sol.cpp > CMakeFiles/sudoku.dir/1sol.cpp.i
 
-CMakeFiles/sudoku.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sudoku.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hatnho0708/Documents/ORLAB/sudoku/main.cpp -o CMakeFiles/sudoku.dir/main.cpp.s
+CMakeFiles/sudoku.dir/1sol.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sudoku.dir/1sol.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hatnho0708/Documents/ORLAB/sudoku/1sol.cpp -o CMakeFiles/sudoku.dir/1sol.cpp.s
 
 # Object files for target sudoku
 sudoku_OBJECTS = \
-"CMakeFiles/sudoku.dir/main.cpp.o"
+"CMakeFiles/sudoku.dir/1sol.cpp.o"
 
 # External object files for target sudoku
 sudoku_EXTERNAL_OBJECTS =
 
-sudoku: CMakeFiles/sudoku.dir/main.cpp.o
+sudoku: CMakeFiles/sudoku.dir/1sol.cpp.o
 sudoku: CMakeFiles/sudoku.dir/build.make
 sudoku: /Applications/CPLEX_Studio1210/cplex/lib/x86-64_osx/static_pic/libcplex.a
 sudoku: /Applications/CPLEX_Studio1210/cplex/lib/x86-64_osx/static_pic/libilocplex.a

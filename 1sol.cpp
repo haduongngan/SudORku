@@ -535,11 +535,8 @@ int main(int argc, char** argv) {
     IloNum start;
     start = cplex.getTime();
 
-    cplex.solve();
     output <<  ((cplex.getTime() - start < 0.001) ? 0.001 : (cplex.getTime() - start)) << endl;
-
-
-
+    if (cplex.solve()){
         IloArray <IloArray<IloNumArray>> sol(env, sizeOfMatrix);
         for (int i = 0; i < sizeOfMatrix; i++) {
             sol[i] = IloArray<IloNumArray>(env, sizeOfMatrix);
@@ -557,6 +554,9 @@ int main(int argc, char** argv) {
             }
             output << endl;
         }
+    }
+    else output << "-1";
+
 
 
 
