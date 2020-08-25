@@ -11,7 +11,7 @@
 using namespace std;
 ILOSTLBEGIN
 
-ifstream input("../inputv4.txt");
+ifstream input("../input.txt");
 ofstream output("../output.txt");
 
 
