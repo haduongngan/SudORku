@@ -11,7 +11,7 @@
 using namespace std;
 ILOSTLBEGIN
 
-ifstream input("../input.txt");
+ifstream input("../inputv4.txt");
 ofstream output("../output.txt");
 
 
@@ -37,11 +37,54 @@ enum typeOfSudoku {
     Killer,
 };
 
-int main(int argc, char** argv) {
-    if (argc == 3) {
-        input = ifstream(argv[1]);
-        output = ofstream(argv[2]);
+
+
+void dfs(int i, int j, int** color, vector<pos>& sameBlock, bool** checkHide){
+    for (int k = 1; k < 5; k++){
+        if (k == 1) //east
+        {
+            if ((j + 1) < sizeOfMatrix && !checkHide[i][j + 1] && color[i][j] == color[i][j + 1]) {
+                pos newPos(i, j + 1);
+                sameBlock.push_back(newPos);
+                checkHide[i][j + 1] = 1;
+                dfs(i, j + 1, color, sameBlock, checkHide);
+            }
+        }
+        else if (k == 2) //west
+        {
+            if ((j - 1) > 0 && !checkHide[i][j - 1] && color[i][j] == color[i][j - 1]) {
+                pos newPos(i, j - 1);
+                sameBlock.push_back(newPos);
+                checkHide[i][j - 1] = 1;
+                dfs(i, j - 1, color, sameBlock, checkHide);
+            }
+        }
+        else if (k == 3) //South
+        {
+            if ((i + 1) < sizeOfMatrix && !checkHide[i + 1][j] && color[i][j] == color[i + 1][j]) {
+                pos newPos(i + 1, j);
+                sameBlock.push_back(newPos);
+                checkHide[i + 1][j] = 1;
+                dfs(i + 1, j, color, sameBlock, checkHide);
+            }
+        }
+        else if (k == 4) //Nouth
+        {
+            if ((i - 1) > 0 && !checkHide[i - 1][j] && color[i][j] == color[i - 1][j]) {
+                pos newPos(i - 1, j);
+                sameBlock.push_back(newPos);
+                checkHide[i - 1][j] = 1;
+                dfs(i - 1, j, color, sameBlock, checkHide);
+            }
+        }
     }
+}
+
+int main(int argc, char** argv) {
+//    if (argc == 3) {
+//        input = ifstream(argv[1]);
+//        output = ofstream(argv[2]);
+//    }
     int type;
     input >> type;
 
@@ -125,6 +168,7 @@ int main(int argc, char** argv) {
             }
 
             //(6)
+            //cout << block.size() << endl;
             for (int y = 0; y < block.size(); y++) {
                 for (int k = 1; k < sizeOfMatrix; k++) {
                     IloExpr tmp(env);
@@ -336,7 +380,9 @@ int main(int argc, char** argv) {
             for (int i = 1; i < sizeOfMatrix; i++) {
                 for (int j = 1; j < sizeOfMatrix; j++) {
                     input >> inputNum[i][j];
+                    //cout << inputNum[i][j] << " ";
                 }
+                //cout << endl;
             }
 
             //(2)
@@ -344,6 +390,7 @@ int main(int argc, char** argv) {
                 for (int j = 1; j < sizeOfMatrix; j++) {
                     if (inputNum[i][j] != 0) {
                         model.add(x[i][j][inputNum[i][j]] == 1);
+                        //cout << "(2) : " << i << " " << j << " " << inputNum[i][j] << endl;
                     }
                 }
             }
@@ -386,15 +433,25 @@ int main(int argc, char** argv) {
 
             //color block
 
+            //cout << endl;
             int color[sizeOfMatrix][sizeOfMatrix];
             for (int i = 1; i < sizeOfMatrix; i++) {
                 for (int j = 1; j < sizeOfMatrix; j++) {
                     input >> color[i][j];
+                    //cout << color[i][j] << " ";
                 }
+                //cout << endl;
             }
 
+//            for (int i = 0; i < sizeOfMatrix; i++){
+//                for (int j = 0; j < sizeOfMatrix; j++){
+//                    cout << color[i][j] << " ";
+//                }
+//                cout << endl;
+//            }
+
             vector<vector<pos>> block;
-            for (int m = 0; m < sizeOfMatrix - 1; m++) {
+            for (int m = 1; m < sizeOfMatrix; m++) {
                 vector<pos> tmp;
                 block.push_back(tmp);
             }
@@ -403,14 +460,25 @@ int main(int argc, char** argv) {
                 for (int j = 1; j < sizeOfMatrix; j++) {
                     pos tmp(i, j);
                     block[color[i][j]].push_back(tmp);
+                    //cout << "block " << color[i][j] << " : " << i << " " << j << endl;
                 }
             }
+//            cout << block.size() << endl;
+//            cout << endl;
+//            for (int i = 0; i < block.size(); i++){
+//                //cout << i << " : ";
+//                //cout << block[i].size() << endl;
+//                for (int j = 0; j < block[i].size(); j++){
+//                    cout << block[i][j].row << " " << block[i][j].col << " * ";
+//                }
+//                cout << endl;
+//            }
 
-            for (int m = 0; m < sizeOfMatrix - 1; m++) {
+            for (int i = 0; i < block.size(); i++) {
                 for (int k = 1; k < sizeOfMatrix; k++) {
                     IloExpr tmp(env);
-                    for (int y = 0; y < block[m].size(); y++) {
-                        tmp += x[block[m][y].row][block[m][y].col][k];
+                    for (int j = 0; j < block[i].size(); j++) {
+                        tmp += x[block[i][j].row][block[i][j].col][k];
                     }
                     model.add(tmp == 1);
                 }
@@ -420,6 +488,15 @@ int main(int argc, char** argv) {
 
         case Killer :
         {
+
+            int inputNum[sizeOfMatrix][sizeOfMatrix];
+            for (int i = 1; i < sizeOfMatrix; i++) {
+                for (int j = 1; j < sizeOfMatrix; j++) {
+                    input >> inputNum[i][j];
+                    //cout << inputNum[i][j] << " ";
+                }
+                //cout << endl;
+            }
 
             vector<pos> block;
             for (int i = 1; i < sizeOfMatrix; i += 3) {
@@ -478,37 +555,55 @@ int main(int argc, char** argv) {
                 }
             }
 
+            //void dfs(int i, int j, int** color, vector<pos>& sameBlock, bool** checkHide)
+
             //color block
-            int numOfBlock;
-            input >> numOfBlock;
-            for (int num = 1; num <= numOfBlock; num++){
-                int sumOfBlock;
-                input >> sumOfBlock;
-                int sizeOfBlock;
-                input >> sizeOfBlock;
-                vector<pos> block;
-                for (int i = 1; i <= sizeOfBlock; i++) {
-                    int r,c;
-                    input >> r >> c;
-                    pos tmp(r, c);
-                    block.push_back(tmp);
+            int** color = new int*[sizeOfMatrix];
+            for (int i = 0; i < sizeOfMatrix; i++){
+                color[i] = new int[sizeOfMatrix];
+            }
+            for (int i = 1; i < sizeOfMatrix; i++) {
+                for (int j = 1; j < sizeOfMatrix; j++) {
+                    input >> color[i][j];
                 }
-
-                IloExpr tmpSum(env);
-
-                for (int k = 1; k < sizeOfMatrix; k++) {
-                    IloExpr tmp(env);
-                    for (int y = 0; y < block.size(); y++){
-                        tmp += x[block[y].row][block[y].col][k];
-                    }
-                    tmpSum += k*tmp;
-                }
-                model.add(tmpSum == sumOfBlock);
             }
 
+            bool** checkHide = new bool*[sizeOfMatrix];
+            for (int i = 0; i < sizeOfMatrix; i++){
+                checkHide[i] = new bool[sizeOfMatrix];
+            }
+            for (int i = 1; i < sizeOfMatrix; i++) {
+                for (int j = 1; j < sizeOfMatrix; j++) {
+                    if (i*j == 0) checkHide[i][j] = 1;
+                    else checkHide[i][j] = 0;
+                }
+            }
+
+            for (int i = 1; i < sizeOfMatrix; i++){
+                for (int j = 1; j < sizeOfMatrix; j++){
+                    if (checkHide[i][j] == 0){
+                        //int sum = inputNum[i][j];
+                        vector<pos> sameBlock;
+                        pos now(i,j);
+                        sameBlock.push_back(now);
+                        checkHide[i][j] = 1;
+                        dfs(i, j, color, sameBlock, checkHide);
+
+                        IloExpr tmpSum(env);
+
+                        for (int k = 1; k < sizeOfMatrix; k++) {
+                            IloExpr tmp(env);
+                            for (int y = 0; y < sameBlock.size(); y++){
+                                tmp += x[sameBlock[y].row][sameBlock[y].col][k];
+                            }
+                            tmpSum += k*tmp;
+                        }
+                        model.add(tmpSum == inputNum[i][j]);
+                    }
+                }
+            }
             break;
         }
-
     }
 
     for (int i = 0; i < sizeOfMatrix; i++) {
@@ -530,6 +625,7 @@ int main(int argc, char** argv) {
 
     model.add(IloMinimize(env, sum));
     IloCplex cplex(model);
+    cplex.exportModel("/Users/hatnho0708/Library/Preferences/CLion2019.3/scratches/model.lp");
     IloNum tol = cplex.getParam(IloCplex::EpInt);
 
     IloNum start;
