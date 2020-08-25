@@ -81,10 +81,10 @@ void dfs(int i, int j, int** color, vector<pos>& sameBlock, bool** checkHide){
 }
 
 int main(int argc, char** argv) {
-//    if (argc == 3) {
-//        input = ifstream(argv[1]);
-//        output = ofstream(argv[2]);
-//    }
+    if (argc == 3) {
+        input = ifstream(argv[1]);
+        output = ofstream(argv[2]);
+    }
     int type;
     input >> type;
 
