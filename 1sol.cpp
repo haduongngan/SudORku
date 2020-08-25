@@ -380,9 +380,7 @@ int main(int argc, char** argv) {
             for (int i = 1; i < sizeOfMatrix; i++) {
                 for (int j = 1; j < sizeOfMatrix; j++) {
                     input >> inputNum[i][j];
-                    //cout << inputNum[i][j] << " ";
                 }
-                //cout << endl;
             }
 
             //(2)
@@ -390,7 +388,6 @@ int main(int argc, char** argv) {
                 for (int j = 1; j < sizeOfMatrix; j++) {
                     if (inputNum[i][j] != 0) {
                         model.add(x[i][j][inputNum[i][j]] == 1);
-                        //cout << "(2) : " << i << " " << j << " " << inputNum[i][j] << endl;
                     }
                 }
             }
@@ -433,22 +430,12 @@ int main(int argc, char** argv) {
 
             //color block
 
-            //cout << endl;
             int color[sizeOfMatrix][sizeOfMatrix];
             for (int i = 1; i < sizeOfMatrix; i++) {
                 for (int j = 1; j < sizeOfMatrix; j++) {
                     input >> color[i][j];
-                    //cout << color[i][j] << " ";
                 }
-                //cout << endl;
             }
-
-//            for (int i = 0; i < sizeOfMatrix; i++){
-//                for (int j = 0; j < sizeOfMatrix; j++){
-//                    cout << color[i][j] << " ";
-//                }
-//                cout << endl;
-//            }
 
             vector<vector<pos>> block;
             for (int m = 1; m < sizeOfMatrix; m++) {
@@ -463,16 +450,6 @@ int main(int argc, char** argv) {
                     //cout << "block " << color[i][j] << " : " << i << " " << j << endl;
                 }
             }
-//            cout << block.size() << endl;
-//            cout << endl;
-//            for (int i = 0; i < block.size(); i++){
-//                //cout << i << " : ";
-//                //cout << block[i].size() << endl;
-//                for (int j = 0; j < block[i].size(); j++){
-//                    cout << block[i][j].row << " " << block[i][j].col << " * ";
-//                }
-//                cout << endl;
-//            }
 
             for (int i = 0; i < block.size(); i++) {
                 for (int k = 1; k < sizeOfMatrix; k++) {
@@ -493,9 +470,7 @@ int main(int argc, char** argv) {
             for (int i = 1; i < sizeOfMatrix; i++) {
                 for (int j = 1; j < sizeOfMatrix; j++) {
                     input >> inputNum[i][j];
-                    //cout << inputNum[i][j] << " ";
                 }
-                //cout << endl;
             }
 
             vector<pos> block;
@@ -555,7 +530,6 @@ int main(int argc, char** argv) {
                 }
             }
 
-            //void dfs(int i, int j, int** color, vector<pos>& sameBlock, bool** checkHide)
 
             //color block
             int** color = new int*[sizeOfMatrix];
@@ -582,7 +556,6 @@ int main(int argc, char** argv) {
             for (int i = 1; i < sizeOfMatrix; i++){
                 for (int j = 1; j < sizeOfMatrix; j++){
                     if (checkHide[i][j] == 0){
-                        //int sum = inputNum[i][j];
                         vector<pos> sameBlock;
                         pos now(i,j);
                         sameBlock.push_back(now);
@@ -625,7 +598,7 @@ int main(int argc, char** argv) {
 
     model.add(IloMinimize(env, sum));
     IloCplex cplex(model);
-    cplex.exportModel("/Users/hatnho0708/Library/Preferences/CLion2019.3/scratches/model.lp");
+    //cplex.exportModel("/Users/hatnho0708/Library/Preferences/CLion2019.3/scratches/model.lp");
     IloNum tol = cplex.getParam(IloCplex::EpInt);
 
     IloNum start;
